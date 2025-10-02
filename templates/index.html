@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Water Segmentation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌊 Water Segmentation U-Net</h1>
+    <p>Upload your <b>.tif</b> image and get the predicted water mask!</p>
+
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".tif" required>
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if mask_filename %}
+      <div class="result">
+        <h2>✅ Prediction Result</h2>
+        <p>Here is your predicted mask:</p>
+        <img src="{{ url_for('static', filename='results/' + mask_filename) }}" class="result-img">
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
