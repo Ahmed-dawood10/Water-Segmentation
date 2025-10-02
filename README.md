@@ -99,7 +99,7 @@ From-Scratch U-Net (u-net_fromscratch.h5)
 📌 Both models are too large to include in GitHub.
 👉 You can download them from Google Drive:
 
-Pretrained U-Net ([Drive Link](https://drive.google.com/file/d/1Zeg6qpXruHVJK_odAQyOpxoPxzuHqMtv/view?usp=drive_link)
+Pretrained U-Net ([Drive Link](https://drive.google.com/file/d/1Zeg6qpXruHVJK_odAQyOpxoPxzuHqMtv/view?usp=drive_link))
 
 From-Scratch U-Net (Drive Link)
 
